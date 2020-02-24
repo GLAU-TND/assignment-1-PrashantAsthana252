@@ -1,14 +1,12 @@
 package defination;
 
+import defination.MyLinkedList;
+import Helper.Node;
+import Helper.Person;
 
-
-        import defination.MyLinkedList;
-        import Helper.Node;
-        import Helper.Person;
-
-        import java.util.ArrayList;
-        import java.util.Collections;
-        import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
 
 public class Menu {
     private MyLinkedList<Person> linkedList;
@@ -20,12 +18,13 @@ public class Menu {
     }
 
     public int showChoice() {
-        System.out.println("Welcome to Devesh's Contact List App\n" +
+        System.out.println("Welcome to Tanishq's Contact List App\n" +
                 "Press 1 to add a new contact\n" +
                 "Press 2 to view all contacts\n" +
                 "Press 3 to search for a contact\n" +
                 "Press 4 to delete a contact\n" +
-                "Press 5 to exit program");
+                "Press 5 to exit program\n"+
+                "Thanks");
         return scan.nextInt();
     }
 

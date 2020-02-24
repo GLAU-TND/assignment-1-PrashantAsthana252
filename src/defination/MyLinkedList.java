@@ -35,4 +35,7 @@ public class MyLinkedList<T extends  Comparable<T>> {
             temp.setNext(node);
         }
     }
+
+
+    }
 }
