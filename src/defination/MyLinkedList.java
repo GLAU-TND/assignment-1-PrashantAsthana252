@@ -8,3 +8,30 @@ public class MyLinkedList<T extends  Comparable<T>> {
 
     public Node<T> getHead() {
         return head;
+    }        //getter for head
+
+    public void setHead(Node<T> node) {
+        head = node;
+        iter = head;
+    }   //setter for head
+
+    public Node<T> getIter() {
+        return iter;
+    }                //Getter for iter
+
+    public void setIter(Node<T> iter) {
+        this.iter = iter;
+    }  //Setter for iter
+
+    //method to insert new node
+    public void insert(Node<T> node) {
+        if (getHead() == null) {
+            setHead(node);
+        } else {
+            Node<T> temp = head;
+            while (temp.getNext() != null) {
+                temp = temp.getNext();
+            }
+            temp.setNext(node);
+        }
+    }
