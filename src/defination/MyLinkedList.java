@@ -1,6 +1,6 @@
 package defination;
 
-import defination.Node;
+import Helper.Node;
 
 public class MyLinkedList<T extends  Comparable<T>> {
     private Node<T> head;           //It is the beginning of linked list
