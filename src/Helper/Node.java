@@ -11,3 +11,18 @@ public class Node<T> {
     public T getData() {
         return data;
     }
+    //Setter for data
+    public void setData(T data) {
+        this.data = data;
+    }
+
+    //Getter for self referential data
+    public Node<T> getNext() {
+        return next;
+    }
+
+    //Setter for self referential data
+    public void setNext(Node<T> next) {
+        this.next = next;
+    }
+
